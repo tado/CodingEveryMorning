@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "Sketch160516Debug.app"
-               BlueprintName = "Sketch160516"
-               ReferencedContainer = "container:Sketch160516.xcodeproj">
+               BuildableName = "Sketch160602.app"
+               BlueprintName = "Sketch160602"
+               ReferencedContainer = "container:Sketch160602.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "Sketch160516Debug.app"
-            BlueprintName = "Sketch160516"
-            ReferencedContainer = "container:Sketch160516.xcodeproj">
+            BuildableName = "Sketch160602.app"
+            BlueprintName = "Sketch160602"
+            ReferencedContainer = "container:Sketch160602.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "Sketch160516Debug.app"
-            BlueprintName = "Sketch160516"
-            ReferencedContainer = "container:Sketch160516.xcodeproj">
+            BuildableName = "Sketch160602.app"
+            BlueprintName = "Sketch160602"
+            ReferencedContainer = "container:Sketch160602.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "Sketch160516Debug.app"
-            BlueprintName = "Sketch160516"
-            ReferencedContainer = "container:Sketch160516.xcodeproj">
+            BuildableName = "Sketch160602.app"
+            BlueprintName = "Sketch160602"
+            ReferencedContainer = "container:Sketch160602.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
