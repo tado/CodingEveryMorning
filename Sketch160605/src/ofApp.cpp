@@ -4,10 +4,10 @@
 void ofApp::setup(){
     ofSetFrameRate(60);
     ofBackground(0);
-    light.enable();
-    light.setPosition(-200, 200, 500);
+    //light.enable();
+    //light.setPosition(-200, 200, 500);
     ofEnableDepthTest();
-    myMesh = ofSpherePrimitive(200, 60).getMesh();
+    myMesh = ofSpherePrimitive(200, 72).getMesh();
     for (int i = 0; i < myMesh.getVertices().size(); i++) {
         myMesh.addColor(ofFloatColor(1.0, 1.0, 1.0, 1.0));
     }
@@ -15,16 +15,13 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    float time = ofGetElapsedTimef();
-    float noiseTime = time * 1.0;
-    
     for (int i = 0; i < myMesh.getVertices().size(); i++) {
-        ofVec3f loc = myMesh.getVertices()[i] / 200.0;
-        float noise = ofMap(ofNoise(loc.x, loc.y, loc.z, ofGetElapsedTimef()), 0, 1, 100, 200);
+        ofVec3f loc = myMesh.getVertices()[i] / 300.0;
+        float noise = ofMap(ofNoise(loc.x, loc.y, loc.z, ofGetElapsedTimef()), 0, 1, 80, 240);
         ofVec3f newLoc = loc.normalize()* noise;
         myMesh.setVertex(i, newLoc);
         float c = ofMap(ofNoise(loc.x, loc.y, loc.z, ofGetElapsedTimef()),0, 1, 0.5, 1.2);
-        myMesh.setColor(i, ofFloatColor(c*0.5, c*0.7, c, 1.0));
+        myMesh.setColor(i, ofFloatColor(0, c * 0.8, c, 1.0));
     }
 }
 
@@ -32,7 +29,7 @@ void ofApp::update(){
 void ofApp::draw(){
     cam.begin();
     ofPushMatrix();
-    ofRotateY(ofGetElapsedTimef()*2.0);
+    ofRotateY(ofGetElapsedTimef()*10.0);
     myMesh.draw();
     ofPopMatrix();
     cam.end();
